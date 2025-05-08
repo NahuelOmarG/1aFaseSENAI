@@ -308,7 +308,7 @@ function exer28(){
     let interruptor = prompt ("O interruptor está ligado ou desligado: ")
     if (interruptor == "ligado"){
         console.log("Luz acesa!")
-    } else (interruptor == "desligada"){
+    } else if (interruptor == "desligada"){
         console.log("Luz apagada.")
     }
 
@@ -388,3 +388,47 @@ function exer36(){
     }
 
 }
+
+function exer37(){
+    let diasEntrega = Number(prompt("Digite a demora de entrega em dias:"))
+    if(diasEntrega < 2){
+        console.log("Entrega expressa")
+    } else {
+        console.log("A entrega ira demorar: " , diasEntrega , " dias.")
+    }
+}
+
+function exer38(){
+    let data =prompt("Digite o dia e mes (14 de janeiro)")
+    let temFantasia = prompt("Tem fantasia (Sim/Nao): ")
+    if(data == "31 de outubro" && temFantasia == "sim"){
+        console.log("Doces para vocé!")
+    } else {
+        console.log("Sem festa")
+    }
+    
+    
+}
+
+function exer39(){
+    let temperatura = Number(prompt("Digite a temperatura: "))
+    if (temperatura < 0){
+        console.log("Água congelando")
+    } else if (temperatura == 15){
+        console.log("Água normal")
+    } else if  (temperatura == 25){
+        console.log("Água quente")
+    } else {
+        console.log(temperatura , " graus")
+    }
+    }
+
+    function exer40(){
+        let resposta = prompt("Digite a sequancia correta: ")
+        if(resposta == "azul, verde, vermelho"){
+            console.log("Vocé venceu a memória")
+        } else {
+            console.log("Errou , tente novamente")
+        }
+    }
+
